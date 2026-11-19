@@ -6,6 +6,7 @@ import ResultCard from "./ResultCard"
 import TargetGrade from "./TargetGrade"
 import { useState, useEffect, useMemo, useRef } from "react";
 import { IconHelpCircle } from '@tabler/icons-react';
+import ToolTipHelp from "./ToolTipHelp";
 
 
 
@@ -161,9 +162,7 @@ function HomeCard() {
           <h2 className="text-lg font-semibold">
             Nota objetivo
           </h2>
-          <button className="text-sm text-blue-400 hover:text-blue-300">
-            <IconHelpCircle/>
-          </button>
+          <ToolTipHelp/>
         </div>
         <TargetGrade handlerInput={targetGradeHandler} totalWeight={totalWeight} targetGrade={targetGrade} />
         <ConfigCard configGrade={configGrade} updateConfig={configGradeHandler} />
