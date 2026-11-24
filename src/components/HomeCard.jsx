@@ -162,7 +162,7 @@ function HomeCard() {
           <h2 className="text-lg font-semibold">
             Nota objetivo
           </h2>
-          <ToolTipHelp/>
+          <ToolTipHelp content="Ingresa la nota final que quieres alcanzar. La app calculará la nota mínima que necesitas en la evaluación faltante para lograr tu objetivo. También puedes configurar la nota mínima y máxima según la escala de tu país, por defecto se usa de 1,0 a 7,0." />
         </div>
         <TargetGrade handlerInput={targetGradeHandler} totalWeight={totalWeight} targetGrade={targetGrade} />
         <ConfigCard configGrade={configGrade} updateConfig={configGradeHandler} />
