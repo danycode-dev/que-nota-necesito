@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IconHelpCircle, IconPlus, IconXMark} from '@tabler/icons-react';
+import ToolTipHelp from "./ToolTipHelp";
 
 function EvaluationList({ evaluations, addEvaluation, removeEvaluation, updateEvaluation, configGrade }) {
   
@@ -22,9 +23,7 @@ function EvaluationList({ evaluations, addEvaluation, removeEvaluation, updateEv
             <h2 className="text-lg font-semibold">
               Evaluaciones
             </h2>
-            <button className="text-sm text-blue-400 hover:text-blue-300">
-              <IconHelpCircle/>
-            </button>
+            <ToolTipHelp content="Ingresa todas tus evaluaciones y sus ponderaciones. Deja vacía solo la nota que quieres calcular, pero ingresa igualmente su ponderación. El nombre de cada evaluación es opcional. Si todas valen lo mismo, puedes colocar 1 en cada ponderación." />
           </div>
           <div className="mb-2 grid grid-cols-16 gap-3 text-xs uppercase tracking-wider text-gray-500">
             <span className="col-span-1">#</span>
